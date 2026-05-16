@@ -26,7 +26,7 @@ function Contact() {
               <span className="info-icon">📍</span>
               <div>
                 <p className="info-label">Location</p>
-                <p className="info-value">london</p>
+                <p className="info-value">Egypt</p>
               </div>
             </div>
             <div className="info-item">
