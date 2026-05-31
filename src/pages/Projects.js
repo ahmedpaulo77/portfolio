@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar';
 import './Projects.css';
-import clothesImg from '../images/screencapture-peaceful-toffee-fe0288-netlify-app-2026-05-24-17_55_52.png';
+import clothesImg from '../images/screencapture-127-0-0-1-5500-fashion-store-landing-english-html-2026-05-23-02_12_41.png';
 import pharmacyImg from '../images/screencapture-file-C-Users-elwady-Desktop-all-sydlya-phar-html-2026-04-25-08_24_03.png';
 import fruitImg from '../images/screencapture-file-C-Users-elwady-Desktop-all-fruiittt-boot-html-2026-04-25-08_22_37.png';
 
