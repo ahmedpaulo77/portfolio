@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar';
 import './Projects.css';
-import clothesImg from '../images/screencapture-127-0-0-1-5500-fashion-store-landing-english-html-2026-05-23-02_12_41.png';
+import clothesImg from '../images/fashion.png';
 import pharmacyImg from '../images/screencapture-file-C-Users-elwady-Desktop-all-sydlya-phar-html-2026-04-25-08_24_03.png';
 import fruitImg from '../images/screencapture-file-C-Users-elwady-Desktop-all-fruiittt-boot-html-2026-04-25-08_22_37.png';
 
@@ -10,21 +10,24 @@ const projects = [
     title: "Fruit Shop",
     desc: "A modern e-commerce website for fresh fruits with a beautiful UI and smooth user experience.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    img: fruitImg
+    img: fruitImg,
+    link: ""
   },
   {
     id: 2,
     title: "Clothes Shop",
     desc: "A stylish online clothing store with responsive design, product catalog and shopping features.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    img: clothesImg
+    img: clothesImg,
+    link: "https://peaceful-toffee-fe0288.netlify.app/"
   },
   {
     id: 3,
     title: "Pharmacy",
     desc: "A clean and professional pharmacy website with medicine listings and contact information.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    img: pharmacyImg
+    img: pharmacyImg,
+    link: ""
   }
 ];
 
@@ -48,6 +51,10 @@ function Projects() {
                     <span key={tag}>{tag}</span>
                   ))}
                 </div>
+                {project.link && (
+<a href={project.link} target="_blank" rel="noreferrer" className="live-btn">                    Live Demo →
+                  </a>
+                )}
               </div>
             </div>
           ))}
