@@ -1,5 +1,8 @@
 import Navbar from '../Components/Navbar';
 import './Projects.css';
+import clothesImg from '../images/screencapture-peaceful-toffee-fe0288-netlify-app-2026-05-24-17_55_52.png';
+import pharmacyImg from '../images/screencapture-file-C-Users-elwady-Desktop-all-sydlya-phar-html-2026-04-25-08_24_03.png';
+import fruitImg from '../images/screencapture-file-C-Users-elwady-Desktop-all-fruiittt-boot-html-2026-04-25-08_22_37.png';
 
 const projects = [
   {
@@ -7,21 +10,21 @@ const projects = [
     title: "Fruit Shop",
     desc: "A modern e-commerce website for fresh fruits with a beautiful UI and smooth user experience.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    icon: "🍊"
+    img: fruitImg
   },
   {
     id: 2,
     title: "Clothes Shop",
     desc: "A stylish online clothing store with responsive design, product catalog and shopping features.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    icon: "👕"
+    img: clothesImg
   },
   {
     id: 3,
     title: "Pharmacy",
     desc: "A clean and professional pharmacy website with medicine listings and contact information.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    icon: "💊"
+    img: pharmacyImg
   }
 ];
 
@@ -36,13 +39,15 @@ function Projects() {
         <div className="projects-grid">
           {projects.map((project) => (
             <div className="project-card" key={project.id}>
-              <div className="project-icon">{project.icon}</div>
-              <h3>{project.title}</h3>
-              <p>{project.desc}</p>
-              <div className="project-tags">
-                {project.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
+              <img src={project.img} alt={project.title} className="project-img" />
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.desc}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
